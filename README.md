@@ -30,6 +30,16 @@ A feature that can search for a student's or person's name, phone number, and em
 <li>PHP myadmin user name & password</li>
 </ul>
 
+### create Table
+<img src="images/Screenshot (165).png" width="100%"/>
+<ul>
+<li>Open main menu after the enter "6" and go to setting.</li>
+<li>(1) - View Databased {check having ('mydatabase',) in your Database}</li>
+<li>(2) - View Tables {check having ('customers',) in your Database}</li>
+<li>(3) - You Haven't Table In your cadabase? yo can create new Table.</li>
+<li>(4) - You can Delet Your Database.</li>
+  
+</ul>
 
 <ul>
 <code></code>
