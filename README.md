@@ -7,4 +7,11 @@ A feature that can search for a student's or person's name, phone number, and em
 
 ### Instructions before use
 
-1.First you install <a href="https://www.wampserver.com/en/download-wampserver-64bits/" target='_new'> wamp </a> server or <a href="https://www.apachefriends.org/download.html" target='_blank' > xampp server </a>
+<ol>
+  <li>First you install <a href="https://www.wampserver.com/en/download-wampserver-64bits/"> wamp </a> server or <a href="https://www.apachefriends.org/download.html"> xampp server </a></li>
+  <li>This ripo download as zip</li>
+  <li>If you can install a version of Python higher than 3.8.0, it will work</li>
+  <li>Install the mySQL package from <code>python -m pip install mysql-connector </code></li>
+  <li>Start Wamp or XAMPP server</li>
+  <li>Run the Main file using your terminal</li>
+</ol>
