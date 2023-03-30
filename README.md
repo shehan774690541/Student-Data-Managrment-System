@@ -21,3 +21,18 @@ A feature that can search for a student's or person's name, phone number, and em
   <li>Enter User name and Password for login</li>  
   <li>your server password and user name <b>ex: 'root' / ''</b> </li>  
 </ul>
+
+### login
+
+<img src="images/Screenshot (156).png" width="100%"/>
+<ul>
+<li><code>exit</code> - Log out</li>
+<li>PHP myadmin user name & password</li>
+</ul>
+
+
+<ul>
+<code></code>
+<li></li>
+<li></li>
+</ul>
