@@ -1,7 +1,5 @@
 import mysql.connector
-
 table_name = "customers"
-
 def login():
       while True:
         try:
@@ -65,16 +63,11 @@ def add_data():
                         language = input(f" Enter Programming Language \t: ")
                         if language != "":
                             break           
-                
-
                 mycursor = mydb.cursor()
-
                 sql = "INSERT INTO customers (name, phone, language) VALUES (%s, %s, %s)"
                 val = (name, phone, language) #name	phone	language	
                 mycursor.execute(sql, val)
-
                 mydb.commit()
-
                 print(mycursor.rowcount, "record inserted.\n")
 
         except Exception as error:
@@ -94,14 +87,12 @@ __________________________________
                 if select_ithem == "1":
                     mycursor = mydb.cursor()
                     mycursor.execute("SHOW DATABASES")
-
                     for databases in mycursor:
                         print(str(databases))
 
                 elif select_ithem == "2":
                     mycursor = mydb.cursor()
                     mycursor.execute("SHOW TABLES")
-
                     for data_tables in mycursor:
                         print(data_tables)
                 elif select_ithem == "3":
@@ -122,13 +113,9 @@ __________________________________
 def view_data():
     try:
         mycursor = mydb.cursor()
-
         sql = f"SELECT * FROM {table_name} ORDER BY id"
-
         mycursor.execute(sql)
-
         myresult = mycursor.fetchall()
-
         print("___________________________________________________")
         print("|id\t| name\t\t| phone\t\t| language")
         print("___________________________________________________")
@@ -142,19 +129,17 @@ def edit_data():
     try:
         view_data()
         print("")
-
         edit_for_row = int(input("Enter edit column ID : ")) 
-
         mycursor = mydb.cursor()
         sql = f"SELECT * FROM customers WHERE id ='{edit_for_row}'"
         mycursor.execute(sql)
         myresult = mycursor.fetchall()
-
         for all_data in myresult:
             print(f"| {all_data[0]} \t| {all_data[1]} \t| {all_data[2]} \t| {all_data[3]}")
 
         stu_ID = str(all_data[0])
         while True:
+                name = ""
                 name = input(f"{all_data[1]} edit to student name \t\t: ")
                 if name != "":
                     sql = "UPDATE "+ table_name +" SET name = %s WHERE id = %s"
@@ -162,12 +147,19 @@ def edit_data():
                     mycursor.execute(sql, val)
                     mydb.commit()
                     break
+                elif name == "":
+                    name = all_data[1]
+                    break
                 elif name == "exit -y":
                     break
 
         while True:
+                phone= ""
                 phone = input(f"{all_data[2]} edit to phone number \t\t: ")
-                if phone != "":
+                if phone == "":
+                    phone = all_data[2]
+                    break
+                else:
                     sql = f"UPDATE "+ table_name +" SET phone = %s WHERE id = %s"
                     val = (phone, stu_ID)
                     mycursor.execute(sql, val)
@@ -175,8 +167,12 @@ def edit_data():
                     break
             
         while True:
+                language = ""
                 language = input(f"{all_data[3]} edit to Programming Language \t: ")
-                if language != "":
+                if language == "":
+                    language = all_data[3]
+                    break
+                else:
                     sql = f"UPDATE "+ table_name +" SET language = %s WHERE id = %s"
                     val = (language, stu_ID)
                     mycursor.execute(sql, val)
@@ -249,7 +245,6 @@ def export():
                     <th>Programming Language</th>
                     </tr>
                     '''
-        
         html_end='''
                 </table>
             </div>
@@ -257,19 +252,11 @@ def export():
     </body>
     </html>    
         '''
-        table='''    <tr>
-                    <td>"++"</td>
-                    <td>"++"</td>
-                    <td>"++"</td>
-                    <td>"++"</td>
-        </tr>'''
-
         mycursor = mydb.cursor()
         sql = f"SELECT * FROM {table_name} ORDER BY id"
         mycursor.execute(sql)
         myresult = mycursor.fetchall()
         the_html_rows = ""
-        
         for all_data in myresult:
             id = str(all_data[0])
             name = str(all_data[1])
@@ -277,10 +264,7 @@ def export():
             language = str(all_data[3])
             HTML_row = "<tr><td>" + id + "</td><td>" + name + "</td><td>" + phone + "</td><td>" + language + "</td></tr>\n"             
             the_html_rows = the_html_rows + HTML_row 
-
         export_for_file = html_code + the_html_rows + html_end
-
-
         f = open("index.html", "w")
         f.write(export_for_file)
         print("exporting successful")
@@ -289,15 +273,12 @@ def export():
     except Exception as error:
         print(error)
 
-
-
 connection = login()
 
 if connection[0] == "exit" and connection [1] == "exit":
     program = False
     print("program finished!")
     exit()
-    
 
 try:
     mydb = mysql.connector.connect(
@@ -331,6 +312,11 @@ while True:
             remove_data()
         elif menu == "5":
             export()
+            try:
+                import webbrowser
+                webbrowser.open("index.html")
+            except:
+                print("web opening error!")
         elif menu == "6":
             settings()
 
