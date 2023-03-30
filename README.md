@@ -63,6 +63,21 @@ A feature that can search for a student's or person's name, phone number, and em
 <li>enter new name, phone and email</li>
 </ul>
 
+### Remove Data
+<img src="images/Screenshot (169).png" width="100%"/>
+<ul>
+<li>Press (4) and open delet menu</li>
+<li>enter ID and press enter</li>
+</ul>
+
+### Export Data
+<img src="images/Screenshot (170).png" width="100%"/>
+<ul>
+<li>Press (5) and open delet menu</li>
+<li>Check Your File path and Open "index.html"</li>
+</ul>
+
+
 
 <ul>
 <code></code>
