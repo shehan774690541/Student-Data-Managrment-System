@@ -77,10 +77,13 @@ A feature that can search for a student's or person's name, phone number, and em
 <li>Check Your File path and Open "index.html"</li>
 </ul>
 
+<hr>
+<br>
 
-
+## Help
 <ul>
-<code></code>
-<li></li>
-<li></li>
+<li>Get to <code>http://localhost/phpmyadmin/</code> and You can check your Database</li>
+<li><code>mydatabase > customers</code> in your data files</li>
 </ul>
+
+
