@@ -49,6 +49,21 @@ A feature that can search for a student's or person's name, phone number, and em
 <li>check Result <i>{1 record inserted.}</i> after the add data</li>
 </ul>
 
+### View Data
+<img src="images/Screenshot (167).png" width="100%"/>
+<ul>
+<li>Press (3) after You can view the all data in your table</li>
+</ul>
+
+### Edit Data
+<img src="images/Screenshot (168).png" width="100%"/>
+<ul>
+<li>Press (2) and open edit menu</li>
+<li>enter ID of change your data's</li>
+<li>enter new name, phone and email</li>
+</ul>
+
+
 <ul>
 <code></code>
 <li></li>
