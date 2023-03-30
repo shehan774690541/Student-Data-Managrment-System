@@ -85,5 +85,5 @@ A feature that can search for a student's or person's name, phone number, and em
 <li>Get to <code>http://localhost/phpmyadmin/</code> and You can check your Database</li>
 <li><code>mydatabase > customers</code> in your data files</li>
 </ul>
-
+<img src="images/Screenshot (171).png" width="100%"/>
 
