@@ -1,11 +1,11 @@
-# Student-Data-Managrment-System
+# Student-Data-Managrment-System.
 database
 
 ## What is this application?
 
 A feature that can search for a student's or person's name, phone number, and email. This can be used to improve and simplify your work. The fact that data can be assembled and exported as HTML is another convenience for you.
 
-### Instructions before use
+### Instructions before use.
 <ol>
   <li>First you install <a href="https://www.wampserver.com/en/download-wampserver-64bits/"> wamp </a> server or <a href="https://www.apachefriends.org/download.html"> xampp server. </a></li>
   <li>This ripo download as zip.</li>
@@ -22,7 +22,7 @@ A feature that can search for a student's or person's name, phone number, and em
   <li>your server password and user name <b>ex: 'root' / ''</b> </li>  
 </ul>
 
-### login
+### login.
 
 <img src="images/Screenshot (156).png" width="100%"/>
 <ul>
@@ -30,7 +30,7 @@ A feature that can search for a student's or person's name, phone number, and em
 <li>PHP myadmin user name & password</li>
 </ul>
 
-### create Table
+### create Table.
 <img src="images/Screenshot (165).png" width="100%"/>
 <ul>
 <li>Open main menu after the enter "6" and go to setting.</li>
@@ -38,7 +38,15 @@ A feature that can search for a student's or person's name, phone number, and em
 <li>(2) - View Tables {check having ('customers',) in your Database}</li>
 <li>(3) - You Haven't Table In your cadabase? yo can create new Table.</li>
 <li>(4) - You can Delet Your Database.</li>
-  
+<li>Press "enter" and exit setting</li>
+</ul>
+
+### Add Data.
+<img src="images/Screenshot (166).png" width="100%"/>
+<ul>
+<li>Press (1) in Main menu</li>
+<li>enter Name, phone and email</li>
+<li>check Result <i>{1 record inserted.}</i> after the add data</li>
 </ul>
 
 <ul>
