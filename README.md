@@ -7,4 +7,4 @@ A feature that can search for a student's or person's name, phone number, and em
 
 ### Instructions before use
 
-1.First you install <a href="https://www.wampserver.com/en/download-wampserver-64bits/" target='blank'> wamp </a> server or <a href="https://www.apachefriends.org/download.html" target='blank' > xampp server </a>
+1.First you install <a href="https://www.wampserver.com/en/download-wampserver-64bits/" target='_blank'> wamp </a> server or <a href="https://www.apachefriends.org/download.html" target='_blank' > xampp server </a>
