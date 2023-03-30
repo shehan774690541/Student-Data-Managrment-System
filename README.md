@@ -19,5 +19,5 @@ A feature that can search for a student's or person's name, phone number, and em
 <ul>
   <li>Run The Programm</li>  
   <li>Enter User name and Password for login</li>  
-  <li>//your server password and user name <b>ex: 'root' / ''</b> </li>  
+  <li>your server password and user name <b>ex: 'root' / ''</b> </li>  
 </ul>
